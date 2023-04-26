@@ -129,9 +129,11 @@
                                                     <span class="text-inverse">Remember me</span>
                                                 </label>
                                             </div>
+                                            @if (Route::has('password.request'))
                                             <div class="forgot-phone text-right f-right">
-                                                <a href="#" class="text-right f-w-600"> Forgot Password?</a>
+                                                <a href="{{ route('password.request') }}" class="text-right f-w-600"> Forgot Password?</a>
                                             </div>
+                                             @endif
                                         </div>
                                     </div>
                                     <div class="row m-t-30">
